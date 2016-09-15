@@ -2,7 +2,7 @@
 //  NSObject+Rx.swift
 //  Stopwatch
 //
-//  Created by 宋宋 on 10/09/2016.
+//  Created by DianQK on 10/09/2016.
 //  Copyright © 2016 T. All rights reserved.
 //
 
@@ -17,10 +17,12 @@ extension Reactive where Base: NSObject {
     }
 }
 
+private struct AssociatedKeys {
+    static var _disposeBag: Void = ()
+}
+
 extension NSObject {
-    private struct AssociatedKeys {
-        static var _disposeBag: Void = ()
-    }
+    
 
     fileprivate var _rx_disposeBag: DisposeBag {
         get {

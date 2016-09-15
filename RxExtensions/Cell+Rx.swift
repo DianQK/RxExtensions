@@ -20,11 +20,11 @@ extension Reactive where Base: UITableViewCell {
     }
 }
 
+private struct AssociatedKeys {
+    static var _disposeBag: Void = ()
+}
+
 extension UITableViewCell {
-    
-    private struct AssociatedKeys {
-        static var _disposeBag: Void = ()
-    }
     
     fileprivate var _rx_prepareForReuse: Observable<Void> {
         return Observable.of(self.rx.sentMessage(#selector(UITableViewCell.prepareForReuse)).map { _ in () }, self.rx.deallocated).merge()

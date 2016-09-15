@@ -2,7 +2,7 @@
 //  RxExtensions.h
 //  RxExtensions
 //
-//  Created by 宋宋 on 10/09/2016.
+//  Created by DianQK on 10/09/2016.
 //  Copyright © 2016 T. All rights reserved.
 //
 
