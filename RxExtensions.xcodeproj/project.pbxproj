@@ -14,6 +14,8 @@
 		2636D9A81D83B93F00331745 /* Cell+Rx.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2636D9A41D83B93F00331745 /* Cell+Rx.swift */; };
 		2636D9A91D83B93F00331745 /* Label+Rx.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2636D9A51D83B93F00331745 /* Label+Rx.swift */; };
 		2636D9AA1D83B93F00331745 /* NSObject+Rx.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2636D9A61D83B93F00331745 /* NSObject+Rx.swift */; };
+		26D1655A1D9D55F300DE6232 /* IDHashable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26D165591D9D55F300DE6232 /* IDHashable.swift */; };
+		26E1DAAB1D9D56F400128300 /* RxDataSources.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 26E1DAAA1D9D56F400128300 /* RxDataSources.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +28,8 @@
 		2636D9A41D83B93F00331745 /* Cell+Rx.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Cell+Rx.swift"; sourceTree = "<group>"; };
 		2636D9A51D83B93F00331745 /* Label+Rx.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Label+Rx.swift"; sourceTree = "<group>"; };
 		2636D9A61D83B93F00331745 /* NSObject+Rx.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSObject+Rx.swift"; sourceTree = "<group>"; };
+		26D165591D9D55F300DE6232 /* IDHashable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IDHashable.swift; sourceTree = "<group>"; };
+		26E1DAAA1D9D56F400128300 /* RxDataSources.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxDataSources.framework; path = Carthage/Build/iOS/RxDataSources.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,6 +37,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				26E1DAAB1D9D56F400128300 /* RxDataSources.framework in Frameworks */,
 				2636D9A11D83B8DA00331745 /* RxSwift.framework in Frameworks */,
 				2636D9A21D83B8DA00331745 /* RxCocoa.framework in Frameworks */,
 			);
@@ -67,6 +72,7 @@
 				2636D9A61D83B93F00331745 /* NSObject+Rx.swift */,
 				2636D9961D83B70900331745 /* RxExtensions.h */,
 				2636D9971D83B70900331745 /* Info.plist */,
+				26D165591D9D55F300DE6232 /* IDHashable.swift */,
 			);
 			path = RxExtensions;
 			sourceTree = "<group>";
@@ -74,6 +80,7 @@
 		2636D99E1D83B8DA00331745 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				26E1DAAA1D9D56F400128300 /* RxDataSources.framework */,
 				2636D99F1D83B8DA00331745 /* RxSwift.framework */,
 				2636D9A01D83B8DA00331745 /* RxCocoa.framework */,
 			);
@@ -118,14 +125,13 @@
 		2636D98A1D83B70900331745 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0800;
+				LastUpgradeCheck = 0810;
 				ORGANIZATIONNAME = T;
 				TargetAttributes = {
 					2636D9921D83B70900331745 = {
 						CreatedOnToolsVersion = 8.0;
-						DevelopmentTeam = 9Y9KG3KBHJ;
 						LastSwiftMigration = 0800;
-						ProvisioningStyle = Automatic;
+						ProvisioningStyle = Manual;
 					};
 				};
 			};
@@ -164,6 +170,7 @@
 				2636D9A71D83B93F00331745 /* Bind.swift in Sources */,
 				2636D9AA1D83B93F00331745 /* NSObject+Rx.swift in Sources */,
 				2636D9A91D83B93F00331745 /* Label+Rx.swift in Sources */,
+				26D1655A1D9D55F300DE6232 /* IDHashable.swift in Sources */,
 				2636D9A81D83B93F00331745 /* Cell+Rx.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -189,6 +196,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_SUSPICIOUS_MOVES = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
@@ -242,6 +250,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_SUSPICIOUS_MOVES = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
@@ -276,7 +285,7 @@
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				DEFINES_MODULE = YES;
-				DEVELOPMENT_TEAM = 9Y9KG3KBHJ;
+				DEVELOPMENT_TEAM = "";
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
@@ -301,7 +310,7 @@
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				DEFINES_MODULE = YES;
-				DEVELOPMENT_TEAM = 9Y9KG3KBHJ;
+				DEVELOPMENT_TEAM = "";
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";

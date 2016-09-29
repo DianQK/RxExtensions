@@ -10,6 +10,15 @@ import UIKit
 import RxSwift
 import RxCocoa
 
+open class ReactiveTableViewCell: UITableViewCell {
+    public private(set) var prepareForReuseBag = DisposeBag()
+
+    open override func prepareForReuse() {
+        super.prepareForReuse()
+        prepareForReuseBag = DisposeBag()
+    }
+}
+
 extension Reactive where Base: UITableViewCell {
     public var prepareForReuse: Observable<Void> {
         return Observable.of((base as UITableViewCell).rx.sentMessage(#selector(UITableViewCell.prepareForReuse)).map { _ in }, (base as UITableViewCell).rx.deallocated).merge()
