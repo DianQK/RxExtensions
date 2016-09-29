@@ -16,6 +16,7 @@
 		2636D9AA1D83B93F00331745 /* NSObject+Rx.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2636D9A61D83B93F00331745 /* NSObject+Rx.swift */; };
 		26D1655A1D9D55F300DE6232 /* IDHashable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26D165591D9D55F300DE6232 /* IDHashable.swift */; };
 		26E1DAAB1D9D56F400128300 /* RxDataSources.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 26E1DAAA1D9D56F400128300 /* RxDataSources.framework */; };
+		26E1DAAD1D9D596900128300 /* Helper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26E1DAAC1D9D596900128300 /* Helper.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +31,7 @@
 		2636D9A61D83B93F00331745 /* NSObject+Rx.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSObject+Rx.swift"; sourceTree = "<group>"; };
 		26D165591D9D55F300DE6232 /* IDHashable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IDHashable.swift; sourceTree = "<group>"; };
 		26E1DAAA1D9D56F400128300 /* RxDataSources.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxDataSources.framework; path = Carthage/Build/iOS/RxDataSources.framework; sourceTree = "<group>"; };
+		26E1DAAC1D9D596900128300 /* Helper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Helper.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -73,6 +75,7 @@
 				2636D9961D83B70900331745 /* RxExtensions.h */,
 				2636D9971D83B70900331745 /* Info.plist */,
 				26D165591D9D55F300DE6232 /* IDHashable.swift */,
+				26E1DAAC1D9D596900128300 /* Helper.swift */,
 			);
 			path = RxExtensions;
 			sourceTree = "<group>";
@@ -172,6 +175,7 @@
 				2636D9A91D83B93F00331745 /* Label+Rx.swift in Sources */,
 				26D1655A1D9D55F300DE6232 /* IDHashable.swift in Sources */,
 				2636D9A81D83B93F00331745 /* Cell+Rx.swift in Sources */,
+				26E1DAAD1D9D596900128300 /* Helper.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
