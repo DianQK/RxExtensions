@@ -10,6 +10,16 @@ import UIKit
 import RxSwift
 import RxCocoa
 
+open class ReactiveCollectionViewCell: UICollectionViewCell {
+
+    public private(set) var prepareForReuseBag = DisposeBag()
+
+    open override func prepareForReuse() {
+        super.prepareForReuse()
+        prepareForReuseBag = DisposeBag()
+    }
+}
+
 open class ReactiveTableViewCell: UITableViewCell {
     public private(set) var prepareForReuseBag = DisposeBag()
 
