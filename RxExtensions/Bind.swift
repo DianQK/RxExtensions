@@ -26,10 +26,6 @@ extension ObservableType {
         return disposable
     }
     
-    public func bindTo<O : ObserverType>(_ observer: O) -> Disposable where O.E == Optional<E> {
-        return map(Optional.init).bindTo(observer)
-    }
-    
     public func bindTo(_ variable: RxSwift.Variable<Optional<E>>) -> Disposable {
         return map(Optional.init).bindTo(variable)
     }
