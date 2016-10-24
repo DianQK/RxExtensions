@@ -22,7 +22,6 @@ private struct AssociatedKeys {
 }
 
 extension NSObject {
-    
 
     fileprivate var _rx_disposeBag: DisposeBag {
         get {
