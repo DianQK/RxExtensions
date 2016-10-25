@@ -20,6 +20,7 @@
 		2638889E1DB8758700F35B5F /* Operators.swift in Sources */ = {isa = PBXBuildFile; fileRef = 263888981DB8758700F35B5F /* Operators.swift */; };
 		2638889F1DB8758700F35B5F /* Reverse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 263888991DB8758700F35B5F /* Reverse.swift */; };
 		263888A01DB8758700F35B5F /* Transition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2638889A1DB8758700F35B5F /* Transition.swift */; };
+		2655165D1DBF54EB002E2A02 /* DataSourceExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2655165C1DBF54EB002E2A02 /* DataSourceExtensions.swift */; };
 		26CCF5971DBF44660023586B /* UITableViewHeaderFooterView+Rx.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26CCF5961DBF44660023586B /* UITableViewHeaderFooterView+Rx.swift */; };
 		26D1655A1D9D55F300DE6232 /* IDHashable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26D165591D9D55F300DE6232 /* IDHashable.swift */; };
 		26E1DAAB1D9D56F400128300 /* RxDataSources.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 26E1DAAA1D9D56F400128300 /* RxDataSources.framework */; };
@@ -41,6 +42,7 @@
 		263888981DB8758700F35B5F /* Operators.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Operators.swift; sourceTree = "<group>"; };
 		263888991DB8758700F35B5F /* Reverse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Reverse.swift; sourceTree = "<group>"; };
 		2638889A1DB8758700F35B5F /* Transition.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Transition.swift; sourceTree = "<group>"; };
+		2655165C1DBF54EB002E2A02 /* DataSourceExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataSourceExtensions.swift; sourceTree = "<group>"; };
 		26CCF5961DBF44660023586B /* UITableViewHeaderFooterView+Rx.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UITableViewHeaderFooterView+Rx.swift"; sourceTree = "<group>"; };
 		26D165591D9D55F300DE6232 /* IDHashable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IDHashable.swift; sourceTree = "<group>"; };
 		26E1DAAA1D9D56F400128300 /* RxDataSources.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxDataSources.framework; path = Carthage/Build/iOS/RxDataSources.framework; sourceTree = "<group>"; };
@@ -81,6 +83,7 @@
 			isa = PBXGroup;
 			children = (
 				263888951DB8758700F35B5F /* Alert.swift */,
+				2655165C1DBF54EB002E2A02 /* DataSourceExtensions.swift */,
 				263888961DB8758700F35B5F /* AutoDeselect.swift */,
 				263888971DB8758700F35B5F /* Ignore.swift */,
 				263888981DB8758700F35B5F /* Operators.swift */,
@@ -190,6 +193,7 @@
 			files = (
 				2638889B1DB8758700F35B5F /* Alert.swift in Sources */,
 				2636D9A71D83B93F00331745 /* Bind.swift in Sources */,
+				2655165D1DBF54EB002E2A02 /* DataSourceExtensions.swift in Sources */,
 				2636D9AA1D83B93F00331745 /* NSObject+Rx.swift in Sources */,
 				2638889D1DB8758700F35B5F /* Ignore.swift in Sources */,
 				26CCF5971DBF44660023586B /* UITableViewHeaderFooterView+Rx.swift in Sources */,
