@@ -13,8 +13,12 @@ import RxCocoa
 extension ObservableType {
 
     public func bindTo(_ variables: [RxSwift.Variable<E>]) -> Disposable {
-        // 可能存在内存泄漏
-        return Disposables.create(variables.map(bindTo))
+//        return Disposables.create(variables.map(bindTo))
+        return subscribe(onNext: { value in
+            variables.forEach { (variable) in
+                variable.value = value
+            }
+        })
     }
 
 }
