@@ -31,7 +31,7 @@ open class ReactiveTableViewCell: UITableViewCell {
 
 extension Reactive where Base: UITableViewCell {
     public var prepareForReuse: Observable<Void> {
-        return Observable.of((base as UITableViewCell).rx.sentMessage(#selector(UITableViewCell.prepareForReuse)).map { _ in }, (base as UITableViewCell).rx.deallocated).merge()
+        return Observable.of(sentMessage(#selector(UITableViewCell.prepareForReuse)).map { _ in }, deallocated).merge()
     }
     
     public var prepareForReuseBag: DisposeBag {
@@ -44,10 +44,6 @@ private struct AssociatedKeys {
 }
 
 extension UITableViewCell {
-    
-    fileprivate var _rx_prepareForReuse: Observable<Void> {
-        return Observable.of(self.rx.sentMessage(#selector(UITableViewCell.prepareForReuse)).map { _ in () }, self.rx.deallocated).merge()
-    }
 
     fileprivate var _rx_prepareForReuseBag: DisposeBag {
         MainScheduler.ensureExecutingOnScheduler()
@@ -59,7 +55,8 @@ extension UITableViewCell {
         let bag = DisposeBag()
         objc_setAssociatedObject(self, &AssociatedKeys._disposeBag, bag, objc_AssociationPolicy.OBJC_ASSOCIATION_RETAIN)
 
-        _ = self.rx.sentMessage(#selector(UITableViewCell.prepareForReuse))
+        _ = rx.prepareForReuse
+            .takeUntil(rx.deallocated)
             .subscribe(onNext: { [weak self] _ in
             let newBag = DisposeBag()
             objc_setAssociatedObject(self, &AssociatedKeys._disposeBag, newBag, objc_AssociationPolicy.OBJC_ASSOCIATION_RETAIN)
