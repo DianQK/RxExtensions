@@ -14,9 +14,29 @@ open class ReactiveCollectionViewCell: UICollectionViewCell {
 
     public private(set) var prepareForReuseBag = DisposeBag()
 
+    public let disposeBag = DisposeBag()
+
     open override func prepareForReuse() {
         super.prepareForReuse()
         prepareForReuseBag = DisposeBag()
+    }
+
+    override init(frame: CGRect) {
+        super.init(frame: frame)
+        commonInit()
+    }
+    
+    required public init?(coder aDecoder: NSCoder) {
+        super.init(coder: aDecoder)
+    }
+
+    open override func awakeFromNib() {
+        super.awakeFromNib()
+        commonInit()
+    }
+
+    open func commonInit() {
+
     }
 }
 

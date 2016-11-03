@@ -11,11 +11,32 @@ import RxSwift
 import RxCocoa
 
 open class ReactiveTableViewCell: UITableViewCell {
+
     public private(set) var prepareForReuseBag = DisposeBag()
+
+    public let disposeBag = DisposeBag()
 
     open override func prepareForReuse() {
         super.prepareForReuse()
         prepareForReuseBag = DisposeBag()
+    }
+
+    override init(style: UITableViewCellStyle, reuseIdentifier: String?) {
+        super.init(style: style, reuseIdentifier: reuseIdentifier)
+        commonInit()
+    }
+
+    required public init?(coder aDecoder: NSCoder) {
+        super.init(coder: aDecoder)
+    }
+
+    open override func awakeFromNib() {
+        super.awakeFromNib()
+        commonInit()
+    }
+
+    open func commonInit() {
+        
     }
 }
 

@@ -26,6 +26,8 @@
 		265516631DBF5BA8002E2A02 /* Variable+Array.swift in Sources */ = {isa = PBXBuildFile; fileRef = 265516621DBF5BA8002E2A02 /* Variable+Array.swift */; };
 		269D8E9D1DCAFA6B001F703D /* UIBarItem+Rx.swift in Sources */ = {isa = PBXBuildFile; fileRef = 269D8E9C1DCAFA6B001F703D /* UIBarItem+Rx.swift */; };
 		269D8E9F1DCAFAB3001F703D /* CollectionViewCell+Rx.swift in Sources */ = {isa = PBXBuildFile; fileRef = 269D8E9E1DCAFAB3001F703D /* CollectionViewCell+Rx.swift */; };
+		26BD1AE81DCB888900472A36 /* ReactiveBarButtonItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26BD1AE71DCB888900472A36 /* ReactiveBarButtonItem.swift */; };
+		26BD1AEA1DCB88F500472A36 /* ReactiveCollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26BD1AE91DCB88F500472A36 /* ReactiveCollectionView.swift */; };
 		26CCF5971DBF44660023586B /* UITableViewHeaderFooterView+Rx.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26CCF5961DBF44660023586B /* UITableViewHeaderFooterView+Rx.swift */; };
 		26D1655A1D9D55F300DE6232 /* IDHashable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26D165591D9D55F300DE6232 /* IDHashable.swift */; };
 		26E1DAAB1D9D56F400128300 /* RxDataSources.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 26E1DAAA1D9D56F400128300 /* RxDataSources.framework */; };
@@ -53,6 +55,8 @@
 		265516621DBF5BA8002E2A02 /* Variable+Array.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Variable+Array.swift"; sourceTree = "<group>"; };
 		269D8E9C1DCAFA6B001F703D /* UIBarItem+Rx.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIBarItem+Rx.swift"; sourceTree = "<group>"; };
 		269D8E9E1DCAFAB3001F703D /* CollectionViewCell+Rx.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "CollectionViewCell+Rx.swift"; sourceTree = "<group>"; };
+		26BD1AE71DCB888900472A36 /* ReactiveBarButtonItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReactiveBarButtonItem.swift; sourceTree = "<group>"; };
+		26BD1AE91DCB88F500472A36 /* ReactiveCollectionView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReactiveCollectionView.swift; sourceTree = "<group>"; };
 		26CCF5961DBF44660023586B /* UITableViewHeaderFooterView+Rx.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UITableViewHeaderFooterView+Rx.swift"; sourceTree = "<group>"; };
 		26D165591D9D55F300DE6232 /* IDHashable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IDHashable.swift; sourceTree = "<group>"; };
 		26E1DAAA1D9D56F400128300 /* RxDataSources.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxDataSources.framework; path = Carthage/Build/iOS/RxDataSources.framework; sourceTree = "<group>"; };
@@ -92,6 +96,7 @@
 		2636D9951D83B70900331745 /* RxExtensions */ = {
 			isa = PBXGroup;
 			children = (
+				26BD1AE61DCB887500472A36 /* Reactive */,
 				263888951DB8758700F35B5F /* Alert.swift */,
 				2655165C1DBF54EB002E2A02 /* DataSourceExtensions.swift */,
 				263888961DB8758700F35B5F /* AutoDeselect.swift */,
@@ -124,6 +129,15 @@
 				2636D9A01D83B8DA00331745 /* RxCocoa.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		26BD1AE61DCB887500472A36 /* Reactive */ = {
+			isa = PBXGroup;
+			children = (
+				26BD1AE71DCB888900472A36 /* ReactiveBarButtonItem.swift */,
+				26BD1AE91DCB88F500472A36 /* ReactiveCollectionView.swift */,
+			);
+			path = Reactive;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -214,10 +228,12 @@
 				2638889D1DB8758700F35B5F /* Ignore.swift in Sources */,
 				26CCF5971DBF44660023586B /* UITableViewHeaderFooterView+Rx.swift in Sources */,
 				2638889F1DB8758700F35B5F /* Reverse.swift in Sources */,
+				26BD1AE81DCB888900472A36 /* ReactiveBarButtonItem.swift in Sources */,
 				263888A01DB8758700F35B5F /* Transition.swift in Sources */,
 				2638889C1DB8758700F35B5F /* AutoDeselect.swift in Sources */,
 				265516611DBF5623002E2A02 /* UIButton+Rx.swift in Sources */,
 				2655165F1DBF55BD002E2A02 /* UISwitch+Rx.swift in Sources */,
+				26BD1AEA1DCB88F500472A36 /* ReactiveCollectionView.swift in Sources */,
 				269D8E9D1DCAFA6B001F703D /* UIBarItem+Rx.swift in Sources */,
 				2636D9A91D83B93F00331745 /* Label+Rx.swift in Sources */,
 				26D1655A1D9D55F300DE6232 /* IDHashable.swift in Sources */,
