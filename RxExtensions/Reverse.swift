@@ -22,13 +22,13 @@ extension Bool: Reverseable {
 
 extension Variable where Element: Reverseable {
     /// 设置相反的值
-    public func reverse() {
+    public func reversed() {
         value = value.reverseValue
     }
 }
 
 extension ObservableType where E: Reverseable {
-    func reverse() -> Observable<E> {
+    public func reverse() -> Observable<E> {
         return asObservable().map { $0.reverseValue }
     }
 }
