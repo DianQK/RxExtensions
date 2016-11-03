@@ -1,8 +1,8 @@
 //
-//  Cell+Rx.swift
-//  Expandable
+//  CollectionViewCell+Rx.swift
+//  RxExtensions
 //
-//  Created by DianQK on 8/17/16.
+//  Created by DianQK on 03/11/2016.
 //  Copyright © 2016 T. All rights reserved.
 //
 
@@ -10,7 +10,8 @@ import UIKit
 import RxSwift
 import RxCocoa
 
-open class ReactiveTableViewCell: UITableViewCell {
+open class ReactiveCollectionViewCell: UICollectionViewCell {
+
     public private(set) var prepareForReuseBag = DisposeBag()
 
     open override func prepareForReuse() {
@@ -19,11 +20,11 @@ open class ReactiveTableViewCell: UITableViewCell {
     }
 }
 
-extension Reactive where Base: UITableViewCell {
+extension Reactive where Base: UICollectionViewCell {
     public var prepareForReuse: Observable<Void> {
-        return Observable.of(sentMessage(#selector(UITableViewCell.prepareForReuse)).map { _ in }, deallocated).merge()
+        return Observable.of(sentMessage(#selector(UICollectionViewCell.prepareForReuse)).map { _ in }, deallocated).merge()
     }
-    
+
     public var prepareForReuseBag: DisposeBag {
         return base._rx_prepareForReuseBag
     }
@@ -33,7 +34,7 @@ private struct AssociatedKeys {
     static var _disposeBag: Void = ()
 }
 
-extension UITableViewCell {
+extension UICollectionViewCell {
 
     fileprivate var _rx_prepareForReuseBag: DisposeBag {
         MainScheduler.ensureExecutingOnScheduler()
@@ -48,10 +49,10 @@ extension UITableViewCell {
         _ = rx.prepareForReuse
             .takeUntil(rx.deallocated)
             .subscribe(onNext: { [weak self] _ in
-            let newBag = DisposeBag()
-            objc_setAssociatedObject(self, &AssociatedKeys._disposeBag, newBag, objc_AssociationPolicy.OBJC_ASSOCIATION_RETAIN)
-        })
-
+                let newBag = DisposeBag()
+                objc_setAssociatedObject(self, &AssociatedKeys._disposeBag, newBag, objc_AssociationPolicy.OBJC_ASSOCIATION_RETAIN)
+            })
+        
         return bag
     }
 }

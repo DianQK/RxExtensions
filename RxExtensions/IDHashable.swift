@@ -15,7 +15,7 @@ public protocol IDHashable: Hashable {
 }
 
 extension IDHashable {
-    var hashValue: Int {
+    public var hashValue: Int {
         return id.hashValue
     }
 
@@ -31,7 +31,7 @@ extension Hashable {
 }
 
 extension IdentifiableType where Self: IDHashable {
-    var identity: Self.ID {
+    public var identity: Self.ID {
         return id
     }
 }

@@ -26,3 +26,9 @@ extension Variable where Element: Reverseable {
         value = value.reverseValue
     }
 }
+
+extension ObservableType where E: Reverseable {
+    func reverse() -> Observable<E> {
+        return asObservable().map { $0.reverseValue }
+    }
+}
