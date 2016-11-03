@@ -10,7 +10,8 @@ import UIKit
 import RxSwift
 
 open class ReactiveBarButtonItem: UIBarButtonItem {
-    let disposeBag = DisposeBag()
+
+    public let disposeBag = DisposeBag()
 
     override init() {
         super.init()
