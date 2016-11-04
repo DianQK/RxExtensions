@@ -30,6 +30,7 @@
 		26BD1AEA1DCB88F500472A36 /* ReactiveCollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26BD1AE91DCB88F500472A36 /* ReactiveCollectionView.swift */; };
 		26BD1AFF1DCC692300472A36 /* ReactiveTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26BD1AFE1DCC692300472A36 /* ReactiveTextField.swift */; };
 		26BD1B011DCC6A2100472A36 /* ReactiveImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26BD1B001DCC6A2100472A36 /* ReactiveImageView.swift */; };
+		26BD1B071DCC882A00472A36 /* Replace.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26BD1B061DCC882A00472A36 /* Replace.swift */; };
 		26CCF5971DBF44660023586B /* UITableViewHeaderFooterView+Rx.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26CCF5961DBF44660023586B /* UITableViewHeaderFooterView+Rx.swift */; };
 		26D1655A1D9D55F300DE6232 /* IDHashable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26D165591D9D55F300DE6232 /* IDHashable.swift */; };
 		26E1DAAB1D9D56F400128300 /* RxDataSources.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 26E1DAAA1D9D56F400128300 /* RxDataSources.framework */; };
@@ -61,6 +62,7 @@
 		26BD1AE91DCB88F500472A36 /* ReactiveCollectionView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReactiveCollectionView.swift; sourceTree = "<group>"; };
 		26BD1AFE1DCC692300472A36 /* ReactiveTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReactiveTextField.swift; sourceTree = "<group>"; };
 		26BD1B001DCC6A2100472A36 /* ReactiveImageView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReactiveImageView.swift; sourceTree = "<group>"; };
+		26BD1B061DCC882A00472A36 /* Replace.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Replace.swift; sourceTree = "<group>"; };
 		26CCF5961DBF44660023586B /* UITableViewHeaderFooterView+Rx.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UITableViewHeaderFooterView+Rx.swift"; sourceTree = "<group>"; };
 		26D165591D9D55F300DE6232 /* IDHashable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IDHashable.swift; sourceTree = "<group>"; };
 		26E1DAAA1D9D56F400128300 /* RxDataSources.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxDataSources.framework; path = Carthage/Build/iOS/RxDataSources.framework; sourceTree = "<group>"; };
@@ -121,6 +123,7 @@
 				265516621DBF5BA8002E2A02 /* Variable+Array.swift */,
 				269D8E9C1DCAFA6B001F703D /* UIBarItem+Rx.swift */,
 				269D8E9E1DCAFAB3001F703D /* CollectionViewCell+Rx.swift */,
+				26BD1B061DCC882A00472A36 /* Replace.swift */,
 			);
 			path = RxExtensions;
 			sourceTree = "<group>";
@@ -239,6 +242,7 @@
 				26BD1AE81DCB888900472A36 /* ReactiveBarButtonItem.swift in Sources */,
 				263888A01DB8758700F35B5F /* Transition.swift in Sources */,
 				2638889C1DB8758700F35B5F /* AutoDeselect.swift in Sources */,
+				26BD1B071DCC882A00472A36 /* Replace.swift in Sources */,
 				265516611DBF5623002E2A02 /* UIButton+Rx.swift in Sources */,
 				2655165F1DBF55BD002E2A02 /* UISwitch+Rx.swift in Sources */,
 				26BD1AEA1DCB88F500472A36 /* ReactiveCollectionView.swift in Sources */,
