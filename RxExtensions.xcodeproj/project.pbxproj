@@ -28,6 +28,8 @@
 		269D8E9F1DCAFAB3001F703D /* CollectionViewCell+Rx.swift in Sources */ = {isa = PBXBuildFile; fileRef = 269D8E9E1DCAFAB3001F703D /* CollectionViewCell+Rx.swift */; };
 		26BD1AE81DCB888900472A36 /* ReactiveBarButtonItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26BD1AE71DCB888900472A36 /* ReactiveBarButtonItem.swift */; };
 		26BD1AEA1DCB88F500472A36 /* ReactiveCollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26BD1AE91DCB88F500472A36 /* ReactiveCollectionView.swift */; };
+		26BD1AFF1DCC692300472A36 /* ReactiveTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26BD1AFE1DCC692300472A36 /* ReactiveTextField.swift */; };
+		26BD1B011DCC6A2100472A36 /* ReactiveImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26BD1B001DCC6A2100472A36 /* ReactiveImageView.swift */; };
 		26CCF5971DBF44660023586B /* UITableViewHeaderFooterView+Rx.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26CCF5961DBF44660023586B /* UITableViewHeaderFooterView+Rx.swift */; };
 		26D1655A1D9D55F300DE6232 /* IDHashable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26D165591D9D55F300DE6232 /* IDHashable.swift */; };
 		26E1DAAB1D9D56F400128300 /* RxDataSources.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 26E1DAAA1D9D56F400128300 /* RxDataSources.framework */; };
@@ -57,6 +59,8 @@
 		269D8E9E1DCAFAB3001F703D /* CollectionViewCell+Rx.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "CollectionViewCell+Rx.swift"; sourceTree = "<group>"; };
 		26BD1AE71DCB888900472A36 /* ReactiveBarButtonItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReactiveBarButtonItem.swift; sourceTree = "<group>"; };
 		26BD1AE91DCB88F500472A36 /* ReactiveCollectionView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReactiveCollectionView.swift; sourceTree = "<group>"; };
+		26BD1AFE1DCC692300472A36 /* ReactiveTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReactiveTextField.swift; sourceTree = "<group>"; };
+		26BD1B001DCC6A2100472A36 /* ReactiveImageView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReactiveImageView.swift; sourceTree = "<group>"; };
 		26CCF5961DBF44660023586B /* UITableViewHeaderFooterView+Rx.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UITableViewHeaderFooterView+Rx.swift"; sourceTree = "<group>"; };
 		26D165591D9D55F300DE6232 /* IDHashable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IDHashable.swift; sourceTree = "<group>"; };
 		26E1DAAA1D9D56F400128300 /* RxDataSources.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxDataSources.framework; path = Carthage/Build/iOS/RxDataSources.framework; sourceTree = "<group>"; };
@@ -136,6 +140,8 @@
 			children = (
 				26BD1AE71DCB888900472A36 /* ReactiveBarButtonItem.swift */,
 				26BD1AE91DCB88F500472A36 /* ReactiveCollectionView.swift */,
+				26BD1AFE1DCC692300472A36 /* ReactiveTextField.swift */,
+				26BD1B001DCC6A2100472A36 /* ReactiveImageView.swift */,
 			);
 			path = Reactive;
 			sourceTree = "<group>";
@@ -221,6 +227,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				269D8E9F1DCAFAB3001F703D /* CollectionViewCell+Rx.swift in Sources */,
+				26BD1B011DCC6A2100472A36 /* ReactiveImageView.swift in Sources */,
+				26BD1AFF1DCC692300472A36 /* ReactiveTextField.swift in Sources */,
 				2638889B1DB8758700F35B5F /* Alert.swift in Sources */,
 				2636D9A71D83B93F00331745 /* Bind.swift in Sources */,
 				2655165D1DBF54EB002E2A02 /* DataSourceExtensions.swift in Sources */,
