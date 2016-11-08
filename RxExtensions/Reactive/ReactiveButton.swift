@@ -31,8 +31,9 @@ open class ReactiveButton: UIButton {
 
     }
 
-    required convenience public init(title: Observable<String?>? = nil, isEnabled: Observable<Bool>? = nil, tap: TapEvent? = nil) {
-        self.init()
+    required public init(title: Observable<String?>? = nil, isEnabled: Observable<Bool>? = nil, tap: TapEvent? = nil) {
+        super.init(frame: CGRect.zero)
+        commonInit()
         title?.bindTo(self.rx.title()).addDisposableTo(disposeBag)
         isEnabled?.bindTo(self.rx.isEnabled).addDisposableTo(disposeBag)
         tap?(self.rx.tap.asObservable()).addDisposableTo(disposeBag)

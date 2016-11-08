@@ -28,13 +28,15 @@ open class ReactiveLabel: UILabel {
         
     }
 
-    required convenience public init(text: Observable<String?>? = nil) {
-        self.init()
+    required public init(text: Observable<String?>? = nil) {
+        super.init(frame: CGRect.zero)
+        commonInit()
         text?.bindTo(self.rx.text).addDisposableTo(disposeBag)
     }
 
-    required convenience public init(text: Observable<NSAttributedString?>? = nil) {
-        self.init()
+    required public init(text: Observable<NSAttributedString?>? = nil) {
+        super.init(frame: CGRect.zero)
+        commonInit()
         text?.bindTo(self.rx.attributedText).addDisposableTo(disposeBag)
     }
 

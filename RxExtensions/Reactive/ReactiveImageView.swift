@@ -33,8 +33,9 @@ open class ReactiveImageView: UIImageView {
         
     }
 
-    required convenience public init(image: Observable<UIImage?>? = nil, tap: TapEvent? = nil) {
-        self.init()
+    required public init(image: Observable<UIImage?>? = nil, tap: TapEvent? = nil) {
+        super.init(image: nil)
+        commonInit()
         image?.bindTo(self.rx.image).addDisposableTo(disposeBag)
         if let tap = tap {
             isUserInteractionEnabled = true
