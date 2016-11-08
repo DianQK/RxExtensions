@@ -45,4 +45,16 @@ open class ReactiveImageView: UIImageView {
         }
     }
 
+    required public init(image: Observable<UIImage>? = nil, tap: TapEvent? = nil) {
+        super.init(image: nil)
+        commonInit()
+        image?.bindTo(self.rx.image).addDisposableTo(disposeBag)
+        if let tap = tap {
+            isUserInteractionEnabled = true
+            let tapGestureRecognizer = UITapGestureRecognizer()
+            tap(tapGestureRecognizer.rx.event.map { _ in }).addDisposableTo(disposeBag)
+            self.addGestureRecognizer(tapGestureRecognizer)
+        }
+    }
+
 }
