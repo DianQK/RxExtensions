@@ -40,4 +40,16 @@ open class ReactiveLabel: UILabel {
         text?.bindTo(self.rx.attributedText).addDisposableTo(disposeBag)
     }
 
+    required public init(text: Observable<String>? = nil) {
+        super.init(frame: CGRect.zero)
+        commonInit()
+        text?.bindTo(self.rx.text).addDisposableTo(disposeBag)
+    }
+
+    required public init(text: Observable<NSAttributedString>? = nil) {
+        super.init(frame: CGRect.zero)
+        commonInit()
+        text?.bindTo(self.rx.attributedText).addDisposableTo(disposeBag)
+    }
+
 }
