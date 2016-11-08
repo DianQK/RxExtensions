@@ -31,6 +31,8 @@
 		268163EC1DCF1982006AC5EB /* Occupiable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 268163E21DCF1982006AC5EB /* Occupiable.swift */; };
 		268163ED1DCF1982006AC5EB /* OptionalType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 268163E31DCF1982006AC5EB /* OptionalType.swift */; };
 		268163EE1DCF1982006AC5EB /* RxOptionalError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 268163E41DCF1982006AC5EB /* RxOptionalError.swift */; };
+		26876B9C1DD1779200ED8840 /* ReactiveLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26876B9B1DD1779200ED8840 /* ReactiveLabel.swift */; };
+		26876B9E1DD1783C00ED8840 /* ReactiveButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26876B9D1DD1783C00ED8840 /* ReactiveButton.swift */; };
 		269D8E9D1DCAFA6B001F703D /* UIBarItem+Rx.swift in Sources */ = {isa = PBXBuildFile; fileRef = 269D8E9C1DCAFA6B001F703D /* UIBarItem+Rx.swift */; };
 		269D8E9F1DCAFAB3001F703D /* CollectionViewCell+Rx.swift in Sources */ = {isa = PBXBuildFile; fileRef = 269D8E9E1DCAFAB3001F703D /* CollectionViewCell+Rx.swift */; };
 		26BD1AE81DCB888900472A36 /* ReactiveBarButtonItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26BD1AE71DCB888900472A36 /* ReactiveBarButtonItem.swift */; };
@@ -70,6 +72,8 @@
 		268163E21DCF1982006AC5EB /* Occupiable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Occupiable.swift; sourceTree = "<group>"; };
 		268163E31DCF1982006AC5EB /* OptionalType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OptionalType.swift; sourceTree = "<group>"; };
 		268163E41DCF1982006AC5EB /* RxOptionalError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RxOptionalError.swift; sourceTree = "<group>"; };
+		26876B9B1DD1779200ED8840 /* ReactiveLabel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReactiveLabel.swift; sourceTree = "<group>"; };
+		26876B9D1DD1783C00ED8840 /* ReactiveButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReactiveButton.swift; sourceTree = "<group>"; };
 		269D8E9C1DCAFA6B001F703D /* UIBarItem+Rx.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIBarItem+Rx.swift"; sourceTree = "<group>"; };
 		269D8E9E1DCAFAB3001F703D /* CollectionViewCell+Rx.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "CollectionViewCell+Rx.swift"; sourceTree = "<group>"; };
 		26BD1AE71DCB888900472A36 /* ReactiveBarButtonItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReactiveBarButtonItem.swift; sourceTree = "<group>"; };
@@ -174,6 +178,8 @@
 				26BD1AE91DCB88F500472A36 /* ReactiveCollectionView.swift */,
 				26BD1AFE1DCC692300472A36 /* ReactiveTextField.swift */,
 				26BD1B001DCC6A2100472A36 /* ReactiveImageView.swift */,
+				26876B9B1DD1779200ED8840 /* ReactiveLabel.swift */,
+				26876B9D1DD1783C00ED8840 /* ReactiveButton.swift */,
 			);
 			path = Reactive;
 			sourceTree = "<group>";
@@ -267,6 +273,7 @@
 				2636D9AA1D83B93F00331745 /* NSObject+Rx.swift in Sources */,
 				268163E91DCF1982006AC5EB /* Driver+Optional.swift in Sources */,
 				268163ED1DCF1982006AC5EB /* OptionalType.swift in Sources */,
+				26876B9C1DD1779200ED8840 /* ReactiveLabel.swift in Sources */,
 				2638889D1DB8758700F35B5F /* Ignore.swift in Sources */,
 				26CCF5971DBF44660023586B /* UITableViewHeaderFooterView+Rx.swift in Sources */,
 				2638889F1DB8758700F35B5F /* Reverse.swift in Sources */,
@@ -287,6 +294,7 @@
 				26D1655A1D9D55F300DE6232 /* IDHashable.swift in Sources */,
 				2636D9A81D83B93F00331745 /* TableViewCell+Rx.swift in Sources */,
 				2638889E1DB8758700F35B5F /* Operators.swift in Sources */,
+				26876B9E1DD1783C00ED8840 /* ReactiveButton.swift in Sources */,
 				265516631DBF5BA8002E2A02 /* Variable+Array.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

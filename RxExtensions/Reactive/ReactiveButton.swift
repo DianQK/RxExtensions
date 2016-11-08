@@ -1,8 +1,8 @@
 //
-//  ReactiveBarButtonItem.swift
+//  ReactiveButton.swift
 //  RxExtensions
 //
-//  Created by DianQK on 03/11/2016.
+//  Created by DianQK on 08/11/2016.
 //  Copyright © 2016 T. All rights reserved.
 //
 
@@ -10,12 +10,15 @@ import UIKit
 import RxSwift
 import RxCocoa
 
-open class ReactiveBarButtonItem: UIBarButtonItem {
+public typealias Tap<T> = ((Observable<T>) -> Disposable)
+public typealias TapEvent = ((Observable<Void>) -> Disposable) //Tap<Void> Orz Xcode 挂掉了。。。
+
+open class ReactiveButton: UIButton {
 
     public let disposeBag = DisposeBag()
 
-    public override init() {
-        super.init()
+    override public init(frame: CGRect) {
+        super.init(frame: frame)
         commonInit()
     }
 
@@ -30,7 +33,7 @@ open class ReactiveBarButtonItem: UIBarButtonItem {
 
     required convenience public init(title: Observable<String?>? = nil, isEnabled: Observable<Bool>? = nil, tap: TapEvent? = nil) {
         self.init()
-        title?.bindTo(self.rx.title).addDisposableTo(disposeBag)
+        title?.bindTo(self.rx.title()).addDisposableTo(disposeBag)
         isEnabled?.bindTo(self.rx.isEnabled).addDisposableTo(disposeBag)
         tap?(self.rx.tap.asObservable()).addDisposableTo(disposeBag)
     }

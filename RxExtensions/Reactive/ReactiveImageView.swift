@@ -14,12 +14,12 @@ open class ReactiveImageView: UIImageView {
 
     public let disposeBag = DisposeBag()
 
-    override init(frame: CGRect) {
+    override public init(frame: CGRect) {
         super.init(frame: frame)
         commonInit()
     }
 
-    override init(image: UIImage?) {
+    override public init(image: UIImage?) {
         super.init(image: image)
         commonInit()
     }
@@ -31,6 +31,17 @@ open class ReactiveImageView: UIImageView {
 
     open func commonInit() {
         
+    }
+
+    required convenience public init(image: Observable<UIImage?>? = nil, tap: TapEvent? = nil) {
+        self.init()
+        image?.bindTo(self.rx.image).addDisposableTo(disposeBag)
+        if let tap = tap {
+            isUserInteractionEnabled = true
+            let tapGestureRecognizer = UITapGestureRecognizer()
+            tap(tapGestureRecognizer.rx.event.map { _ in }).addDisposableTo(disposeBag)
+            self.addGestureRecognizer(tapGestureRecognizer)
+        }
     }
 
 }
