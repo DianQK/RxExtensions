@@ -33,6 +33,7 @@
 		268163EE1DCF1982006AC5EB /* RxOptionalError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 268163E41DCF1982006AC5EB /* RxOptionalError.swift */; };
 		26876B9C1DD1779200ED8840 /* ReactiveLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26876B9B1DD1779200ED8840 /* ReactiveLabel.swift */; };
 		26876B9E1DD1783C00ED8840 /* ReactiveButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26876B9D1DD1783C00ED8840 /* ReactiveButton.swift */; };
+		26876BA01DD197E300ED8840 /* ReactiveViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26876B9F1DD197E300ED8840 /* ReactiveViewController.swift */; };
 		269D8E9D1DCAFA6B001F703D /* UIBarItem+Rx.swift in Sources */ = {isa = PBXBuildFile; fileRef = 269D8E9C1DCAFA6B001F703D /* UIBarItem+Rx.swift */; };
 		269D8E9F1DCAFAB3001F703D /* CollectionViewCell+Rx.swift in Sources */ = {isa = PBXBuildFile; fileRef = 269D8E9E1DCAFAB3001F703D /* CollectionViewCell+Rx.swift */; };
 		26BD1AE81DCB888900472A36 /* ReactiveBarButtonItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26BD1AE71DCB888900472A36 /* ReactiveBarButtonItem.swift */; };
@@ -74,6 +75,7 @@
 		268163E41DCF1982006AC5EB /* RxOptionalError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RxOptionalError.swift; sourceTree = "<group>"; };
 		26876B9B1DD1779200ED8840 /* ReactiveLabel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReactiveLabel.swift; sourceTree = "<group>"; };
 		26876B9D1DD1783C00ED8840 /* ReactiveButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReactiveButton.swift; sourceTree = "<group>"; };
+		26876B9F1DD197E300ED8840 /* ReactiveViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReactiveViewController.swift; sourceTree = "<group>"; };
 		269D8E9C1DCAFA6B001F703D /* UIBarItem+Rx.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIBarItem+Rx.swift"; sourceTree = "<group>"; };
 		269D8E9E1DCAFAB3001F703D /* CollectionViewCell+Rx.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "CollectionViewCell+Rx.swift"; sourceTree = "<group>"; };
 		26BD1AE71DCB888900472A36 /* ReactiveBarButtonItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReactiveBarButtonItem.swift; sourceTree = "<group>"; };
@@ -180,6 +182,7 @@
 				26BD1B001DCC6A2100472A36 /* ReactiveImageView.swift */,
 				26876B9B1DD1779200ED8840 /* ReactiveLabel.swift */,
 				26876B9D1DD1783C00ED8840 /* ReactiveButton.swift */,
+				26876B9F1DD197E300ED8840 /* ReactiveViewController.swift */,
 			);
 			path = Reactive;
 			sourceTree = "<group>";
@@ -281,6 +284,7 @@
 				26BD1AE81DCB888900472A36 /* ReactiveBarButtonItem.swift in Sources */,
 				263888A01DB8758700F35B5F /* Transition.swift in Sources */,
 				268163EC1DCF1982006AC5EB /* Occupiable.swift in Sources */,
+				26876BA01DD197E300ED8840 /* ReactiveViewController.swift in Sources */,
 				268163EE1DCF1982006AC5EB /* RxOptionalError.swift in Sources */,
 				2638889C1DB8758700F35B5F /* AutoDeselect.swift in Sources */,
 				26BD1B071DCC882A00472A36 /* Replace.swift in Sources */,
