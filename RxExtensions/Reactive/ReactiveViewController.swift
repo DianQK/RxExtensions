@@ -17,6 +17,7 @@ open class ReactiveViewController: UIViewController {
     required public init(title: Observable<String>? = nil) { //TODO: add button item
         super.init(nibName: nil, bundle: nil)
         title?.bindTo(self.rx.title).addDisposableTo(disposeBag)
+        self.view.backgroundColor = .white
     }
     
     required public init?(coder aDecoder: NSCoder) {
