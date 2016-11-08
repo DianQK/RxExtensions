@@ -28,4 +28,10 @@ open class ReactiveTextField: UITextField {
 
     }
 
+    required public init(text: Observable<String?>? = nil, textChanged: ((Observable<String?>) -> Disposable)? = nil) {
+        super.init(frame: CGRect.zero)
+        text?.bindTo(self.rx.text).addDisposableTo(disposeBag)
+        textChanged?(self.rx.text.asObservable()).addDisposableTo(disposeBag)
+    }
+
 }
