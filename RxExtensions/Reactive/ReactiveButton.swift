@@ -31,12 +31,29 @@ open class ReactiveButton: UIButton {
 
     }
 
-    required public init(title: Observable<String?>? = nil, isEnabled: Observable<Bool>? = nil, tap: TapEvent? = nil) {
+    required public init(
+        title: Observable<String?>? = nil,
+        images: (UIControlState, Observable<UIImage>)...,
+        isEnabled: Observable<Bool>? = nil,
+        tap: TapEvent? = nil) {
         super.init(frame: CGRect.zero)
-        commonInit()
         title?.bindTo(self.rx.title()).addDisposableTo(disposeBag)
+
+        for image in images {
+            image.1.bindTo(self.rx.image(for: image.0)).addDisposableTo(disposeBag)
+        }
+
         isEnabled?.bindTo(self.rx.isEnabled).addDisposableTo(disposeBag)
         tap?(self.rx.tap.asObservable()).addDisposableTo(disposeBag)
+        commonInit()
     }
 
+}
+
+extension Reactive where Base: UIButton {
+    func image(for controlState: UIControlState = UIControlState.normal) -> UIBindingObserver<UIButton, UIImage?> {
+        return UIBindingObserver(UIElement: self.base, binding: { (button, image) in
+            button.setImage(image, for: controlState)
+        })
+    }
 }
