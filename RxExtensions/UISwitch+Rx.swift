@@ -11,12 +11,12 @@ import RxSwift
 import RxCocoa
 
 extension Reactive where Base: UISwitch {
-    public var isOn: ControlProperty<Bool> {
+    public func isOn(animated: Bool = true) -> ControlProperty<Bool> {
         let source = self.controlEvent(.valueChanged)
             .map { [unowned uiSwitch = self.base] in uiSwitch.isOn }
         let sink = UIBindingObserver<UISwitch, Bool>(UIElement: self.base) { uiSwitch, isOn in
             guard uiSwitch.isOn != isOn else { return }
-            uiSwitch.setOn(isOn, animated: true)
+            uiSwitch.setOn(isOn, animated: animated)
         }
         return ControlProperty(values: source, valueSink: sink)
     }

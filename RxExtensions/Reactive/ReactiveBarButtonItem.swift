@@ -28,8 +28,9 @@ open class ReactiveBarButtonItem: UIBarButtonItem {
 
     }
 
-    required convenience public init(title: Observable<String?>? = nil, isEnabled: Observable<Bool>? = nil, tap: TapEvent? = nil) {
+    required convenience public init(title: Observable<String>? = nil, isEnabled: Observable<Bool>? = nil, tap: TapEvent? = nil) {
         self.init()
+
         title?.bindTo(self.rx.title).addDisposableTo(disposeBag)
         isEnabled?.bindTo(self.rx.isEnabled).addDisposableTo(disposeBag)
         tap?(self.rx.tap.asObservable()).addDisposableTo(disposeBag)
